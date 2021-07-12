@@ -1,0 +1,19 @@
+package com.clone.instagram.authservice.payload;
+
+
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NonNull;
+import lombok.RequiredArgsConstructor;
+
+@Data
+@AllArgsConstructor
+@RequiredArgsConstructor
+public class JwtAuthenticationResponse {
+
+    @NonNull
+    private String accessToken;
+    private String tokenType = "Bearer";
+    private String id;
+    private String username;
+}
